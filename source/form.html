@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+<body class="page__body">
+  <header class="page-header">
+    <a href="#" class="page-header__logo">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/33x37" width="33" height="37" alt="Логотип магазина Cat Energy">
+    </a>
+    <h1 class="page-header__logo-header">Сat energy</h1>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-navigation__wrapper">
+        <!--Элемент wrapper для центровки содержимого по макету-->
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <!--Применяем модификатор, при активной сслыке - нижнее подчеркивание-->
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+<section class="page-main__about wrapper">
+  <h1 class="heading">Подбор программы</h1>
+  <p class="text">Заполните анкету, и мы подберем
+программу питания для вашего кота</p>
+</section>
+<div class="page-main__form wrapper">
+  <form class="appointment" action="https://echo.htmlacademy.ru" method="get" target="_blank">
+<fieldset class="appointment__parameters">
+  <label class="label" for="username">Имя:*</label>
+  <input class="username" id="username" type="text" name="login-name" placeholder="Барсик" aria-required="true">
+  <label class="label" for="weight">Вес (кг):*</label>
+  <input class="weight" id="weight" type="text" name="weight" placeholder="7" aria-required="true">
+  <label class="label" for="age">Возраст (лет):*</label>
+  <input class="age" id="age" type="text" name="age" placeholder="7" aria-required="true">
+</fieldset>
+<fieldset class="appointment__filter">
+  <label for="rad1" class="radio-option"> <input class="input-radio" type="radio" name="weight-parameters" value="losing-weight" id="rad1" checked><span class="radio-box"></span>Похудение</label><!--span для добавления css кнопок-->
+  <label for="rad2" class="radio-option"><input class="input-radio" type="radio" name="weight-parameters" value="weight-gain" id="rad2"><span class="radio-box"> </span>Набор массы</label>
+  <label for="rad3" class="radio-option"> <input class="input-radio" type="radio" name="weight-parameters" value="hesitation" id="rad3"><span class="radio-box"></span>Не знаю (нужен ваш совет)</label>
+  </fieldset>
+  <fieldset class="appointment__contacts">Контактные данные (владельца кота)
+    <label class="label" for="e-mail">E-mail:*</label>
+    <input class="login-mail-user" id="e-mail" type="email" name="login-email" placeholder="kuklachev@gmail.com" aria-required="true">
+    <label class="label" for="usertel">Телефон:*</label>
+    <input class="login-tel-user" id="usertel" type="tel" name="login-telephone" placeholder="8(960)900-60-90" aria-required="true">
+  </fieldset>
+  <fieldset class="appointment__text">Комментарий
+    <label class="label" for="login-text"></label>
+    <textarea class="login-textarea" id="login-text" name="comment" cols="80" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+  </fieldset>
+  <fieldset class="appointment__chekbox">Дополнительно
+    <label for="component-sweetener" class="check-option"> <input class="check-input" type="checkbox" name="selecting-sweetener" value="sweetener" id="component-sweetener" checked><span class="check-box"></span>Сахарозаменитель</label>
+    <label for="component-water" class="check-option"><input class="check-input" type="checkbox" name="selecting-water" value="water" id="component-water"><span class="check-box"></span>Питьевая вода</label>
+    <label for="component-milk" class="check-option"> <input class="check-input" type="checkbox" name="selecting-milk" value="milk" id="component-milk"><span class="check-box"></span>Молоко</label>
+    <label for="component-vitamine" class="check-option"><input class="check-input" type="checkbox" name="selecting-vitamine" value="vitamine" id="component-vitamine"><span class="check-box"></span>Витамины</label>
+  </fieldset>
+  <fieldset class="appointment__button">
+    <label for="form-submit">
+      <input class="form-submit" type="submit" name="show-result" value="отправить заявку" id="form-submit">
+    </label>
+  </fieldset>
+  </form>
+  <p class="page-main__form notice">* &mdash; Обязательные поля</p>
+</div>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <section class="page-footer__contacts contacts">
+        <h3 class="contacts__title">Приглашаем<br>
+          к сотрудничеству дилеров!
+        </h3>
+        <p class="contacts__text">Ул. Большая<br>
+          Конюшенная, д. 19/8<br>
+          Санкт-Петербург</p>
+      </section>
+    </div>
+    <div class="page-footer__map">
+      <div class="map">
+        <iframe class="map__map-google"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729:0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.,+19,+Sankt-Peterburg,+Russia,+191186!5e0!3m2!1sen!2s!4v1441888483426"
+          allowfullscreen="" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="320" height="360"></iframe>
+          <div class="map__map-dot">Я ТОЧКА</div>
+          <!--Добавим с помощью CSS и позиционирования-->
+      </div>
+    </div>
+    <div class="page-footer__social social">
+      <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Увеличенный логотип-название компании Cat Energy" class="social__logo">
+      <div class="social__contacts">
+        <ul class="social__list">
+          <li class="social__item"><a href="https://vk.com/htmlacademy" class="social__link social__link--vkontakte">Вконтакте</a></li>
+          <!--Иконки добавляем через CSS-->
+          <li class="social__item"><a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram">Инстаграм</a></li>
+          <li class="social__item"><a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">Фейсбук</a></li>
+        </ul>
+      </div>
+      <div class="social__contacts-academy">
+        <p class="social__description">Html Academy</p>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="social__link">
+          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Академии" class="social__logo-academy"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
