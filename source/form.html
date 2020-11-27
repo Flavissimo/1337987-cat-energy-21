@@ -42,12 +42,12 @@
     <div class="page-main__form wrapper">
       <form class="appointment" action="https://echo.htmlacademy.ru" method="get" target="_blank">
         <fieldset class="appointment__parameters">
-          <label class="label" for="username">Имя:*</label>
-          <input class="username" id="username" type="text" name="login-name" placeholder="Барсик" aria-required="true">
-          <label class="label" for="weight">Вес (кг):*</label>
-          <input class="weight" id="weight" type="text" name="weight" placeholder="7" aria-required="true">
-          <label class="label" for="age">Возраст (лет):*</label>
-          <input class="age" id="age" type="text" name="age" placeholder="7" aria-required="true">
+          <label class="appointment__label" for="username">Имя:*</label>
+          <input class="appointment__username" id="username" type="text" name="login-name" placeholder="Барсик" aria-required="true">
+          <label class="appointment__label" for="weight">Вес (кг):*</label>
+          <input class="appointment__weight" id="weight" type="text" name="weight" placeholder="7" aria-required="true">
+          <label class="appointment__label" for="age">Возраст (лет):*</label>
+          <input class="appointment__age" id="age" type="text" name="age" placeholder="7" aria-required="true">
         </fieldset>
         <fieldset class="appointment__filter">
           <label for="rad1" class="radio-option">
@@ -55,7 +55,7 @@
             <span class="radio-box"></span>Похудение
           </label>
           <!--span для добавления css кнопок-->
-          <label for="rad2" class="radio-option"><input class="input-radio" type="radio" name="weight-parameters" value="weight-gain" id="rad2">
+          <label for="appointment__rad2" class="radio-option"><input class="input-radio" type="radio" name="weight-parameters" value="weight-gain" id="rad2">
             <span class="radio-box"> </span>Набор массы
           </label>
           <label for="rad3" class="radio-option"> <input class="input-radio" type="radio" name="weight-parameters" value="hesitation" id="rad3">
@@ -63,34 +63,34 @@
           </label>
         </fieldset>
         <fieldset class="appointment__contacts">Контактные данные (владельца кота)
-          <label class="label" for="e-mail">E-mail:*</label>
-          <input class="login-mail-user" id="e-mail" type="email" name="login-email" placeholder="kuklachev@gmail.com" aria-required="true">
-          <label class="label" for="usertel">Телефон:*</label>
-          <input class="login-tel-user" id="usertel" type="tel" name="login-telephone" placeholder="8(960)900-60-90" aria-required="true">
+          <label class="appointment__label" for="e-mail">E-mail:*</label>
+          <input class="appointment__login-mail-user" id="e-mail" type="email" name="login-email" placeholder="kuklachev@gmail.com" aria-required="true">
+          <label class="appointment__label" for="usertel">Телефон:*</label>
+          <input class="appointment__login-tel-user" id="usertel" type="tel" name="login-telephone" placeholder="8(960)900-60-90" aria-required="true">
         </fieldset>
         <fieldset class="appointment__text">Комментарий
-          <label class="label" for="login-text"></label>
-          <textarea class="login-textarea" id="login-text" name="comment" cols="80" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <label class="appointment__label" for="login-text"></label>
+          <textarea class="appointment__login-textarea" id="login-text" name="comment" cols="80" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="appointment__chekbox">Дополнительно
-          <label for="component-sweetener" class="check-option">
-            <input class="check-input" type="checkbox" name="selecting-sweetener" value="sweetener" id="component-sweetener" checked>
-            <span class="check-box"></span>Сахарозаменитель
+          <label for="component-sweetener" class="appointment__check-option">
+            <input class="appointment__check-input" type="checkbox" name="selecting-sweetener" value="sweetener" id="component-sweetener" checked>
+            <span class="appointment__check-box"></span>Сахарозаменитель
           </label>
-          <label for="component-water" class="check-option"><input class="check-input" type="checkbox" name="selecting-water" value="water" id="component-water">
-            <span class="check-box"></span>Питьевая вода
+          <label for="component-water" class="appointment__check-option"><input class="check-input" type="checkbox" name="selecting-water" value="water" id="component-water">
+            <span class="appointment__check-box"></span>Питьевая вода
           </label>
-          <label for="component-milk" class="check-option">
-            <input class="check-input" type="checkbox" name="selecting-milk" value="milk" id="component-milk">
-            <span class="check-box"></span>Молоко
+          <label for="component-milk" class="appointment__check-option">
+            <input class="appointment__check-input" type="checkbox" name="selecting-milk" value="milk" id="component-milk">
+            <span class="appointment__check-box"></span>Молоко
           </label>
-          <label for="component-vitamine" class="check-option"><input class="check-input" type="checkbox" name="selecting-vitamine" value="vitamine" id="component-vitamine">
-            <span class="check-box"></span>Витамины
+          <label for="component-vitamine" class="appointment__check-option"><input class="check-input" type="checkbox" name="selecting-vitamine" value="vitamine" id="component-vitamine">
+            <span class="appointment__check-box"></span>Витамины
           </label>
         </fieldset>
         <fieldset class="appointment__button">
           <label for="form-submit">
-            <input class="form-submit" type="submit" name="show-result" value="Отправить заявку" id="form-submit">
+            <input class="appointment__form-submit" type="submit" name="show-result" value="Отправить заявку" id="form-submit">
           </label>
         </fieldset>
       </form>
