@@ -2,251 +2,261 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
 
-  <head>
-    <meta charset="UTF-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-
-<body>
-
-  <body class="page-body">
-    <header class="page-header">
-      <a href="#" class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/33x37" width="33" height="37" alt="Логотип магазина Cat Energy">
-      </a>
-      <h1 class="page-header__logo-header">Сat energy</h1>
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-navigation__wrapper">
-          <!--Элемент wrapper для центровки содержимого по макету-->
-          <ul class="main-navigation__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <!--Применяем модификатор, при активной сслыке - нижнее подчеркивание-->
-              <a>Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="page-main wrapper">
-      <h2 class=" page-main__title">Каталог продукции</h2>
-      <div class="page-main__catalog-gallery">
-        <!--применю grid-->
-        <section class="page-main__catalog-gallery production">
-          <!--применю flex-->
-          <img class="production__image" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Cat Energy со вкусом курицы 500 гр.">
-          <div class="production production__about-production">
-            <h3 class="about-production title">Cat Energy PRO 500 г</h3>
-            <dl class="about-production description-list">
-              <div class="about-production description-item">
-                <!--применю flex-->
-                <dt class="description-item__description">Масса</dt>
-                <dd class="description-item__numbers">500 г.</dd>
-                <dt class="description-item__description">Вкус</dt>
-                <dd class="description-item__numbers">Курица</dd>
-                <dt class="description-item__description">Цена</dt>
-                <dd class="description-item__numbers">700 Р.</dd>
-              </div>
-            </dl>
-          </div>
-          <a href="#" class="production__button">Заказать</a>
-          <!--!интересный момент: мы должны при нажатии открывать какую-то форму? Тогда переделаю на button или же это переход на новую страницу?-->
-        </section>
-        <section class="page-main__catalog-gallery production">
-          <!--применю flex-->
-          <img class="production__image" src="https://via.placeholder.com/84x100" width="84" height="100" alt="Cat Energy со вкусом курицы 1000 гр.">
-          <div class="production production__about-production">
-            <h3 class="about-production title">Cat Energy PRO 1000 г</h3>
-            <dl class="about-production description-list">
-              <div class="about-production description-item">
-                <!--применю flex-->
-                <dt class="description-item__description">Масса</dt>
-                <dd class="description-item__numbers">1000 г.</dd>
-                <dt class="description-item__description">Вкус</dt>
-                <dd class="description-item__numbers">Курица</dd>
-                <dt class="description-item__description">Цена</dt>
-                <dd class="description-item__numbers">1000 Р.</dd>
-              </div>
-            </dl>
-          </div>
-          <a href="#" class="production__button">Заказать</a>
-        </section>
-        <section class="page-main__catalog-gallery production">
-          <!--применю flex-->
-          <img class="production__image" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Cat Energy со вкусом рыбы 500 гр.">
-          <div class="production production__about-production"></div>
+<body class="page-body">
+  <header class="page-header">
+    <a href="#" class="page-header__logo">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/33x37" width="33" height="37" alt="Логотип магазина Cat Energy">
+    </a>
+    <h1 class="page-header__logo-header">Сat energy</h1>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-navigation__wrapper">
+        <!--Элемент wrapper для центровки содержимого по макету-->
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <!--Применяем модификатор, при активной сслыке - нижнее подчеркивание-->
+            <a>Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main wrapper">
+    <h2 class=" page-main__title">Каталог продукции</h2>
+    <div class="page-main__catalog-gallery">
+      <!--применю grid-->
+      <section class="page-main__catalog-gallery production">
+        <!--применю flex-->
+        <img class="production__image" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Cat Energy со вкусом курицы 500 гр.">
+        <div class="production production__about-production">
           <h3 class="about-production title">Cat Energy PRO 500 г</h3>
-          <dl class="about-production description-list">
-            <div class="about-production description-item">
+          <div class="about-production description-item">
+            <dl class="about-production description-list">
               <!--применю flex-->
-              <dt class="description-item__description">Масса</dt>
+              <dt class="description-item__term">Масса</dt>
               <dd class="description-item__numbers">500 г.</dd>
-              <dt class="description-item__description">Вкус</dt>
-              <dd class="description-item__numbers">Рыба</dd>
-              <dt class="description-item__description">Цена</dt>
+              <dt class="description-item__term">Вкус</dt>
+              <dd class="description-item__numbers">Курица</dd>
+              <dt class="description-item__term">Цена</dt>
               <dd class="description-item__numbers">700 Р.</dd>
-            </div>
-          </dl>
-          <a href="#" class="production__button">Заказать</a>
-        </section>
-        <section class="page-main__catalog-gallery production">
-          <!--применю flex-->
-          <img class="production__image" src="https://via.placeholder.com/84x100" width="84" height="100" alt="Cat Energy со вкусом рыбы 1000 гр.">
-          <div class="production production__about-production"></div>
+            </dl>
+          </div>
+        </div>
+        <a href="#" class="production__button">Заказать</a>
+        <!--!интересный момент: мы должны при нажатии открывать какую-то форму? Тогда переделаю на button или же это переход на новую страницу?-->
+      </section>
+      <section class="page-main__catalog-gallery production">
+        <!--применю flex-->
+        <img class="production__image" src="https://via.placeholder.com/84x100" width="84" height="100" alt="Cat Energy со вкусом курицы 1000 гр.">
+        <div class="production production__about-production">
           <h3 class="about-production title">Cat Energy PRO 1000 г</h3>
-          <dl class="about-production description-list">
-            <div class="about-production description-item">
+          <div class="about-production description-item">
+            <dl class="about-production description-list">
               <!--применю flex-->
-              <dt class="description-item__description">Масса</dt>
+              <dt class="description-item__term">Масса</dt>
               <dd class="description-item__numbers">1000 г.</dd>
-              <dt class="description-item__description">Вкус</dt>
-              <dd class="description-item__numbers">Рыба</dd>
-              <dt class="description-item__description">Цена</dt>
+              <dt class="description-item__term">Вкус</dt>
+              <dd class="description-item__numbers">Курица</dd>
+              <dt class="description-item__term">Цена</dt>
               <dd class="description-item__numbers">1000 Р.</dd>
-            </div>
-          </dl>
-          <a href="#" class="production__button">Заказать</a>
-        </section>
-        <section class="page-main__catalog-gallery production">
-          <!--применю flex-->
-          <img class="production__image" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Cat Energy со вкусом гречки 500 гр.">
-          <div class="production production__about-production"></div>
-          <h3 class="about-production title">Cat Energy SLIM 500 г</h3>
-          <dl class="about-production description-list">
-            <div class="about-production description-item">
+            </dl>
+          </div>
+        </div>
+        <a href="#" class="production__button">Заказать</a>
+      </section>
+      <section class="page-main__catalog-gallery production">
+        <!--применю flex-->
+        <img class="production__image" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Cat Energy со вкусом рыбы 500 гр.">
+        <div class="production production__about-production">
+          <h3 class="about-production title">Cat Energy PRO 500 г</h3>
+          <div class="about-production description-item">
+            <dl class="about-production description-list">
               <!--применю flex-->
-              <dt class="description-item__description">Масса</dt>
+              <dt class="description-item__term">Масса</dt>
               <dd class="description-item__numbers">500 г.</dd>
-              <dt class="description-item__description">Вкус</dt>
-              <dd class="description-item__numbers">Гречка</dd>
-              <dt class="description-item__description">Цена</dt>
-              <dd class="description-item__numbers">400 Р.</dd>
-            </div>
-          </dl>
-          <a href="#" class="production__button">Заказать</a>
-        </section>
-        <section class="page-main__catalog-gallery production">
-          <!--применю flex-->
-          <img class="production__image" src="https://via.placeholder.com/84x100" width="84" height="100" alt="Cat Energy со вкусом гречки 1000 гр.">
-          <div class="production production__about-production"></div>
-          <h3 class="about-production title">Cat Energy SLIM 500 г</h3>
-          <dl class="about-production description-list">
-            <div class="about-production description-item">
-              <!--применю flex-->
-              <dt class="description-item__description">Масса</dt>
-              <dd class="description-item__numbers">500 г.</dd>
-              <dt class="description-item__description">Вкус</dt>
-              <dd class="description-item__numbers">Гречка</dd>
-              <dt class="description-item__description">Цена</dt>
+              <dt class="description-item__term">Вкус</dt>
+              <dd class="description-item__numbers">Рыба</dd>
+              <dt class="description-item__term">Цена</dt>
               <dd class="description-item__numbers">700 Р.</dd>
-            </div>
-          </dl>
-          <a href="#" class="production__button">Заказать</a>
-        </section>
-        <section class="page-main__catalog-gallery production">
-          <!--применю flex-->
-          <img class="production__image" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Cat Energy со вкусом риса 500 гр.">
-          <div class="production production__about-production"></div>
-          <h3 class="about-production title">Cat Energy SLIM 500 г</h3>
-          <dl class="about-production description-list">
-            <div class="about-production description-item">
+            </dl>
+          </div>
+        </div>
+        <a href="#" class="production__button">Заказать</a>
+      </section>
+      <section class="page-main__catalog-gallery production">
+        <!--применю flex-->
+        <img class="production__image" src="https://via.placeholder.com/84x100" width="84" height="100" alt="Cat Energy со вкусом рыбы 1000 гр.">
+        <div class="production production__about-production">
+          <h3 class="about-production title">Cat Energy PRO 1000 г</h3>
+          <div class="about-production description-item">
+            <dl class="about-production description-list">
               <!--применю flex-->
-              <dt class="description-item__description">Масса</dt>
+              <dt class="description-item__term">Масса</dt>
+              <dd class="description-item__numbers">1000 г.</dd>
+              <dt class="description-item__term">Вкус</dt>
+              <dd class="description-item__numbers">Рыба</dd>
+              <dt class="description-item__term">Цена</dt>
+              <dd class="description-item__numbers">1000 Р.</dd>
+            </dl>
+          </div>
+        </div>
+        <a href="#" class="production__button">Заказать</a>
+      </section>
+      <section class="page-main__catalog-gallery production">
+        <!--применю flex-->
+        <img class="production__image" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Cat Energy со вкусом гречки 500 гр.">
+        <div class="production production__about-production">
+          <h3 class="about-production title">Cat Energy SLIM 500 г</h3>
+          <div class="about-production description-item">
+            <dl class="about-production description-list">
+              <!--применю flex-->
+              <dt class="description-item__term">Масса</dt>
               <dd class="description-item__numbers">500 г.</dd>
-              <dt class="description-item__description">Вкус</dt>
-              <dd class="description-item__numbers">Рис</dd>
-              <dt class="description-item__description">Цена</dt>
+              <dt class="description-item__term">Вкус</dt>
+              <dd class="description-item__numbers">Гречка</dd>
+              <dt class="description-item__term">Цена</dt>
               <dd class="description-item__numbers">400 Р.</dd>
-            </div>
-          </dl>
-          <a href="#" class="production__button">Заказать</a>
-        </section>
-      </div>
-      <div class="page-main more-production wrapper">
-        <img src="https://via.placeholder.com/30x30" width="30" height="30" alt="Еще больше товаров" class="more-production__plus">
-        <h3 class="more-production__title">Показать еще 100500 товаров</h3>
-        <p class="more-production__text">На самом деле вкусов гораздо больше!</p>
-        <button class="more-production__button" type="button" name="Открыть больше товаров">Показать все</button>
-      </div>
-      <div class="page-main additional-products wrapper">
-        <h2 class="additional-products__title">Дополнительные товары</h2>
-        <dl class="additional-products__item">
-          <div class="additional-products__list">Сахарозаменитель</div>
+            </dl>
+          </div>
+        </div>
+        <a href="#" class="production__button">Заказать</a>
+      </section>
+      <section class="page-main__catalog-gallery production">
+        <!--применю flex-->
+        <img class="production__image" src="https://via.placeholder.com/84x100" width="84" height="100" alt="Cat Energy со вкусом гречки 1000 гр.">
+        <div class="production production__about-production">
+          <h3 class="about-production title">Cat Energy SLIM 500 г</h3>
+          <div class="about-production description-item">
+            <dl class="about-production description-list">
+              <!--применю flex-->
+              <dt class="description-item__term">Масса</dt>
+              <dd class="description-item__numbers">500 г.</dd>
+              <dt class="description-item__term">Вкус</dt>
+              <dd class="description-item__numbers">Гречка</dd>
+              <dt class="description-item__term">Цена</dt>
+              <dd class="description-item__numbers">700 Р.</dd>
+            </dl>
+          </div>
+        </div>
+        <a href="#" class="production__button">Заказать</a>
+      </section>
+      <section class="page-main__catalog-gallery production">
+        <!--применю flex-->
+        <img class="production__image" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Cat Energy со вкусом риса 500 гр.">
+        <div class="production production__about-production">
+          <h3 class="about-production title">Cat Energy SLIM 500 г</h3>
+          <div class="about-production description-item">
+            <dl class="about-production description-list">
+              <!--применю flex-->
+              <dt class="description-item__term">Масса</dt>
+              <dd class="description-item__numbers">500 г.</dd>
+              <dt class="description-item__term">Вкус</dt>
+              <dd class="description-item__numbers">Рис</dd>
+              <dt class="description-item__term">Цена</dt>
+              <dd class="description-item__numbers">400 Р.</dd>
+            </dl>
+          </div>
+        </div>
+        <a href="#" class="production__button">Заказать</a>
+      </section>
+    </div>
+    <div class="page-main more-production wrapper">
+      <img src="https://via.placeholder.com/30x30" width="30" height="30" alt="Еще больше товаров" class="more-production__plus">
+      <h3 class="more-production__title">Показать еще 100500 товаров</h3>
+      <p class="more-production__text">На самом деле вкусов гораздо больше!</p>
+      <button class="more-production__button" type="button" name="Открыть больше товаров">Показать все</button>
+    </div>
+    <div class="page-main additional-products wrapper">
+      <h2 class="additional-products__title">Дополнительные товары</h2>
+      <p>Сахарозаменитель</p>
+      <!--СПРОСИТЬ. Не уверена в правильности такого расположения. Однако validator ругается, если я присваиваю текст к dl или div -->
+      <dl class="additional-products__item">
+        <div class="additional-products__list">
           <dt class="additional-products__text">1 упаковка (100 г)</dt>
           <dd class="additional-products__cost">200 Р.</dd>
-          <a class="additional-products__button" href="#">Заказать</a>
-        </dl>
-        <dl class="additional-products__item">
-          <div class="additional-products__list">Питьевая вода</div>
+        </div>
+      </dl>
+      <a class="additional-products__button" href="#">Заказать</a>
+      <p>Питьевая вода</p>
+      <dl class="additional-products__item">
+        <div class="additional-products__list">
           <dt class="additional-products__text">1 литр</dt>
           <dd class="additional-products__cost">100 Р.</dd>
-          <a class="additional-products__button" href="#">Заказать</a>
-        </dl>
-        <dl class="additional-products__item">
-          <div class="additional-products__list">Молоко</div>
+        </div>
+      </dl>
+      <a class="additional-products__button" href="#">Заказать</a>
+      <p>Молоко</p>
+      <dl class="additional-products__item">
+        <div class="additional-products__list">
           <dt class="additional-products__text">1 литр</dt>
           <dd class="additional-products__cost">200 Р.</dd>
-          <a class="additional-products__button" href="#">Заказать</a>
-        </dl>
-        <dl class="additional-products__item">
-          <div class="additional-products__list">Витамины</div>
+        </div>
+      </dl>
+      <a class="additional-products__button" href="#">Заказать</a>
+      <p>Витамины</p>
+      <dl class="additional-products__item">
+        <div class="additional-products__list">
           <dt class="additional-products__text">1 упаковка (30 г)</dt>
           <dd class="additional-products__cost">300 Р.</dd>
-          <a class="additional-products__button" href="#">Заказать</a>
-        </dl>
-      </div>
-      <div class="page-main about-gift">
-        <!--через css background-image 280х289-->
-        <div class="about-gift__icon"></div>
-        <p class="about-gift__text">Закажите все и получите чехол для кота в подарок!</p>
-      </div>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <section class="page-footer__contacts contacts">
-          <h3 class="contacts__title">Приглашаем<br>
-            к сотрудничеству дилеров!
-          </h3>
-          <p class="contacts__text">Ул. Большая<br>
-            Конюшенная, д. 19/8<br>
-            Санкт-Петербург</p>
-        </section>
-      </div>
-      <div class="page-footer__map">
-        <div class="map">
-          <iframe class="map__map-google"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729:0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.,+19,+Sankt-Peterburg,+Russia,+191186!5e0!3m2!1sen!2s!4v1441888483426"
-            allowfullscreen="" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="320" height="360"></iframe>
-          <div class="map__map-dot">Я ТОЧКА</div>
-          <!--Добавим с помощью CSS и позиционирования-->
         </div>
+      </dl>
+      <a class="additional-products__button" href="#">Заказать</a>
+    </div>
+    <div class="page-main about-gift">
+      <!--через css background-image 280х289-->
+      <div class="about-gift__icon"></div>
+      <p class="about-gift__text">Закажите все и получите чехол для кота в подарок!</p>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <section class="page-footer__contacts contacts">
+        <h3 class="contacts__title">Приглашаем<br>
+          к сотрудничеству дилеров!
+        </h3>
+        <p class="contacts__text">Ул. Большая<br>
+          Конюшенная, д. 19/8<br>
+          Санкт-Петербург</p>
+      </section>
+    </div>
+    <div class="page-footer__map">
+      <div class="map">
+        <iframe class="map__map-google"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729:0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.,+19,+Sankt-Peterburg,+Russia,+191186!5e0!3m2!1sen!2s!4v1441888483426"
+          allowfullscreen="" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="320" height="360"></iframe>
+        <div class="map__map-dot">Я ТОЧКА</div>
+        <!--Добавим с помощью CSS и позиционирования-->
       </div>
-      <div class="page-footer__social social">
-        <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Увеличенный логотип-название компании Cat Energy" class="social__logo">
-        <div class="social__contacts">
-          <ul class="social__list">
-            <li class="social__item"><a href="https://vk.com/htmlacademy" class="social__link social__link--vkontakte">Вконтакте</a></li>
-            <!--Иконки добавляем через CSS-->
-            <li class="social__item"><a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram">Инстаграм</a></li>
-            <li class="social__item"><a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">Фейсбук</a></li>
-          </ul>
-        </div>
-        <div class="social__contacts-academy">
-          <p class="social__description">Html Academy</p>
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="social__link">
-            <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Академии" class="social__logo-academy"></a>
-        </div>
+    </div>
+    <div class="page-footer__social social">
+      <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Увеличенный логотип-название компании Cat Energy" class="social__logo">
+      <div class="social__contacts">
+        <ul class="social__list">
+          <li class="social__item"><a href="https://vk.com/htmlacademy" class="social__link social__link--vkontakte">Вконтакте</a></li>
+          <!--Иконки добавляем через CSS-->
+          <li class="social__item"><a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram">Инстаграм</a></li>
+          <li class="social__item"><a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">Фейсбук</a></li>
+        </ul>
       </div>
-    </footer>
-  </body>
+      <div class="social__contacts-academy">
+        <p class="social__description">Html Academy</p>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="social__link">
+          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Академии" class="social__logo-academy"></a>
+      </div>
+    </div>
+  </footer>
+</body>
 
 </html>
