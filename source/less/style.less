@@ -1,1 +1,47 @@
-body { background: white; }
+@import "wrapper.less";
+@import "visually-hidden.less";
+@import "page-header.less";
+@import "main-navigation.less";
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local("oswaldregular"), url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+}
+@font-face {
+  font-family: 'OswalMedium';
+  font-style: normal;
+  font-weight: 500;
+  src: local("oswaldmedium"), url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+}
+
+:root {
+  --basic-green: #68B738;
+  --basic-grey: #F2F2F2;
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+  --special-grey: #CDCDCD;
+  --special-grey-text: #666666;
+  --dark-grey: #444444;
+  --dark-grey-text: #222222;
+  --black-logo: #111111;
+}
+
+body,
+html {
+  font-family: 'Oswald', Arial, sans-serif;
+  line-height: 18px;
+  font-size: 14px;
+  width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
