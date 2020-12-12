@@ -1,3 +1,4 @@
+/* В работе
 jQuery(document).ready(function() {
   $('.site-list__item').click(function() {
     $('.main-navigation__toggle').addClass('collapsed').attr('aria-expanded', 'false');
@@ -12,4 +13,4 @@ jQuery(document).ready(function() {
       $navBar.removeClass('border-b');
     }
   });
-});
+});*/
