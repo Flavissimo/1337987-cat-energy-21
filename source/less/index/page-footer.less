@@ -1,0 +1,155 @@
+.page-footer {
+  background-color: var(--basic-grey);
+}
+
+.page-footer__contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__title {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--black-logo);
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--black-logo);
+}
+
+.page-footer__map {
+  position: relative;
+}
+
+.map {
+  position: relative;
+  z-index: 5;
+}
+
+.map__map-google {
+  border: none;
+}
+
+.map__map-dot {
+  position: absolute;
+  left: 41%;
+  top: 35%;
+  background-image: url("../img/map-pin.svg");
+  background-repeat: no-repeat;
+  width: 57px;
+  height: 53px;
+  z-index: 20;
+}
+
+.social img {
+  margin: 39px 0 32px 76px;
+  text-align: center;
+}
+
+.social__contacts {
+  border-top: 1px solid var(--border-bottom-cat);
+  border-bottom: 1px solid var(--border-bottom-cat);
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/*!Уточнить! Не работает как нужно с этого места!*/
+.social__link {
+  color: var(--special-grey-icon);
+
+  &--vkontakte {
+    background-image: url("../img/vkontakte.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 16px;
+  }
+
+  &--vkontakte:hover {
+    background-image: url("../img/green-vkontakte.svg");
+  }
+
+  &--vkontakte:disabled {
+    background-image: url("../img/green-vkontakte.svg");
+    opacity: 30%;
+  }
+
+  &--instagram {
+    background-image: url("../img/instagram.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+  }
+
+  &--instagram:hover {
+    background-image: url("../img/green-instagram.svg");
+  }
+
+  &--instagram:disabled {
+    background-image: url("../img/green-instagram.svg");
+    opacity: 30%;
+  }
+
+  &--facebook {
+    background-image: url("../img/facebook.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+  }
+
+  &--facebook:hover {
+    background-image: url("../img/green-facebook.svg");
+  }
+
+  &--facebook:disabled {
+    background-image: url("../img/green-facebook.svg");
+    opacity: 30%;
+  }
+}
+
+.social__contacts-academy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__description {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--dark-grey);
+
+  &:hover {
+    color: var(--dark-grey);
+  }
+
+  &:disabled {
+    color: var(--dark-grey);
+    opacity: 30%;
+  }
+}
+
+.social__logo-academy {
+  &:hover {
+    background-image: url("../img/green-logo.svg");
+  }
+
+  &:disabled {
+    background-image: url("../img/green-logo.svg");
+    opacity: 30%;
+  }
+}
