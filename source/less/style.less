@@ -1,1 +1,66 @@
-// Начните писать стили здесь
+@import "wrapper.less";
+@import "visually-hidden.less";
+@import "index/page-header.less";
+@import "index/main-navigation.less";
+@import "index/site-list.less";
+@import "index/page-main.less";
+@import "index/about-product.less";
+@import "index/about-benefits.less";
+@import "index/primer.less";
+@import "index/page-footer.less";
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: local("oswaldregular"), url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff"), url("../img/oswald-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OswaldMedium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("oswaldmedium"), url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff"), url("../img/oswald-medium.ttf") format("truetype");
+}
+
+:root {
+  --basic-green: #68b738;
+  --background-green: rgba(104, 183, 56, 0.85);
+  --hover-green: #5eaa2f;
+  --basic-grey: #f2f2f2;
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --special-grey: #cdcdcd;
+  --special-grey-icon: #666666;
+  --dark-grey: #444444;
+  --dark-grey-text: #222222;
+  --border-grey: #e6e6e6;
+  --border-bottom: #68b738;
+  --black-logo: #111111;
+  --border-bottom-cat: #d9d9d9;
+  --background-primer: #eaeaea;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 18px;
+  font-size: 14px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

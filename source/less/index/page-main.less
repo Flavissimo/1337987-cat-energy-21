@@ -1,0 +1,63 @@
+.page-main {
+  display: block;
+  position: relative;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.introduction {
+  display: block;
+  background-color: var(--background-green);
+  position: relative;
+}
+
+.introduction__background {
+  background-image: url("../img/background-desktop-cat.png");
+  position: relative;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.introduction__heading {
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-white);
+  padding-top: 27px;
+}
+
+.introduction__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--basic-white);
+  padding-top: 25px;
+  text-transform: uppercase;
+}
+
+.introduction__image {
+  display: block;
+  z-index: 10;
+  margin-top: 27px;
+}
+
+.introduction__button {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 7px 44px;
+  width: 100%;
+  margin-bottom: 22px;
+
+  &:hover {
+    background-color: var(--hover-green);
+  }
+
+  &:active {
+    background-color: var(--hover-green);
+    opacity: 30%;
+  }
+}
