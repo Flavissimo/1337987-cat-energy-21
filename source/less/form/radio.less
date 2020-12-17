@@ -1,0 +1,60 @@
+.appointment__filter {
+  margin-top: 20px;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.radio {
+  padding-left: 40px;
+  padding-bottom: 19px;
+}
+
+.option {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--dark-grey-text);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.input-radio {
+  appearance: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+
+  &:focus + .radio-box {
+    background-image: url("../img/radio.svg");
+    opacity: 100%;
+  }
+
+  &:checked:focus + .radio-box {
+    background-image: url("../img/radio-button.svg");
+    opacity: 100%;
+  }
+
+  &:hover + .radio-box {
+    opacity: 60%;
+  }
+
+  &:checked + .radio-box {
+    background-image: url("../img/radio-button.svg");
+  }
+
+  &:disabled + .radio-box {
+    opacity: 30%;
+  }
+}
+
+.radio-box {
+  position: absolute;
+  width: 30px;
+  /*!!!НЕСОСТЫКОВКА размеров styleguide (40x40) и страницы!!!*/
+  height: 30px;
+  background-image: url("../img/radio.svg");
+  margin-left: -40px;
+  margin-top: -8px;
+}

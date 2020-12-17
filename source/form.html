@@ -46,7 +46,8 @@
     </section>
     <div class="form-main__form">
       <form class="appointment" action="https://echo.htmlacademy.ru" method="get" target="_blank">
-        <ul class="appointment__item wrapper"><!--Спросить! Что применить, чтобы выровнять по правому краю?-->
+        <ul class="appointment__item wrapper">
+          <!--Спросить! Что применить, чтобы выровнять по правому краю?-->
           <li class="appointment__list list-form">
             <label class="appointment__label" for="username">Имя:*</label>
             <input class="appointment__username" id="username" type="text" name="login-name" placeholder="Барсик" aria-required="true">
@@ -74,16 +75,22 @@
           </label>
         </fieldset>
         <div class="form-main__border"></div>
-        <fieldset class="appointment__contacts wrapper">Контактные данные (владельца кота)
-          <label class="appointment__label" for="e-mail">E-mail:*</label>
-          <input class="appointment__login-mail-user" id="e-mail" type="email" name="login-email" placeholder="kuklachev@gmail.com" aria-required="true">
-          <label class="appointment__label" for="usertel">Телефон:*</label>
-          <input class="appointment__login-tel-user" id="usertel" type="tel" name="login-telephone" placeholder="8(960)900-60-90" aria-required="true">
+        <fieldset class="appointment__contacts wrapper">
+          <div class="appointment__title">Контактные данные <br>(владельца кота)</div>
+          <ul class="appointment__item">
+            <li class="appointment__list list-contacts"><label class="appointment__label" for="e-mail">E-mail:*</label>
+              <input class="appointment__login--mail-user" id="e-mail" type="email" name="login-email" placeholder="kuklachev@gmail.com" aria-required="true">
+            </li>
+            <li class="appointment__list list-contacts"><label class="appointment__label" for="usertel">Телефон:*</label>
+              <input class="appointment__login-tel-user" id="usertel" type="tel" name="login-telephone" placeholder="8(960)900-60-90" aria-required="true">
+            </li>
+          </ul>
         </fieldset>
         <div class="form-main__border"></div>
-        <fieldset class="appointment__text wrapper">Комментарий
+        <fieldset class="appointment__text wrapper">
+          <div class="appointment__title">Комментарий</div>
+            <textarea class="appointment__textarea" id="login-text" name="comment" cols="37" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
           <label class="appointment__label" for="login-text"></label>
-          <textarea class="appointment__login-textarea" id="login-text" name="comment" cols="32" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="appointment__chekbox wrapper">Дополнительно
           <label for="component-sweetener" class="appointment__check-option">
