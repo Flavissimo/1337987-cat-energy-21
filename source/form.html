@@ -38,80 +38,79 @@
       </div>
     </nav>
   </header>
-  <main class="form-main">
-    <section class="form-main__about wrapper">
+  <main class="form-main wrapper">
+    <section class="form-main__about">
       <h2 class="heading">Подбор программы</h2>
       <p class="text">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
     </section>
     <div class="form-main__form">
       <form class="appointment" action="https://echo.htmlacademy.ru" method="get" target="_blank">
-        <ul class="appointment__item wrapper">
-          <!--Спросить! Что применить, чтобы выровнять по правому краю?-->
-          <li class="appointment__list list-form">
+        <ul class="appointment__item">
+          <li class="appointment__list">
             <label class="appointment__label" for="username">Имя:*</label>
-            <input class="appointment__username" id="username" type="text" name="login-name" placeholder="Барсик" aria-required="true">
+            <input class="appointment__input input-username" id="username" type="text" name="login-name" placeholder="Барсик" aria-required="true">
           </li>
-          <li class="appointment__list list-form">
+          <li class="appointment__list">
             <label class="appointment__label" for="weight">Вес (кг):*</label>
-            <input class="appointment__weight" id="weight" type="text" name="weight" placeholder="7" aria-required="true">
+            <input class="appointment__input input-weight" id="weight" type="text" name="weight" placeholder="7" aria-required="true">
           </li>
-          <li class="appointment__list list-form">
+          <li class="appointment__list">
             <label class="appointment__label" for="age">Возраст (лет):*</label>
-            <input class="appointment__age" id="age" type="text" name="age" placeholder="7" aria-required="true">
+            <input class="appointment__input input-age" id="age" type="text" name="age" placeholder="7" aria-required="true">
           </li>
         </ul>
         <div class="form-main__border"></div>
-        <fieldset class="appointment__filter wrapper">
-          <label for="rad1" class="radio option">
+        <fieldset class="appointment__filter">
+          <label for="rad1" class="appointment__radio radio-option">
             <input class="input-radio" type="radio" name="weight-parameters" value="losing-weight" id="rad1" checked>
             <span class="radio-box" checked></span>Похудение
           </label>
-          <label for="rad2" class="radio option"><input class="input-radio" type="radio" name="weight-parameters" value="weight-gain" id="rad2">
+          <label for="rad2" class="appointment__radio radio-option"><input class="input-radio" type="radio" name="weight-parameters" value="weight-gain" id="rad2">
             <span class="radio-box"> </span>Набор массы
           </label>
-          <label for="rad3" class="radio option"> <input class="input-radio" type="radio" name="weight-parameters" value="hesitation" id="rad3">
+          <label for="rad3" class="appointment__radio radio-option"> <input class="input-radio" type="radio" name="weight-parameters" value="hesitation" id="rad3">
             <span class="radio-box"></span>Не знаю (нужен ваш совет)
           </label>
         </fieldset>
         <div class="form-main__border"></div>
-        <fieldset class="appointment__contacts wrapper">
+        <fieldset class="appointment__contacts">
           <div class="appointment__title">Контактные данные <br>(владельца кота)</div>
-          <ul class="appointment__item">
-            <li class="appointment__list list-contacts"><label class="appointment__label" for="e-mail">E-mail:*</label>
+          <ul class="appointment__item wrapper">
+            <li class="appointment__list contacts-list"><label class="appointment__label" for="e-mail">E-mail:*</label>
               <input class="appointment__login--mail-user" id="e-mail" type="email" name="login-email" placeholder="kuklachev@gmail.com" aria-required="true">
             </li>
-            <li class="appointment__list list-contacts"><label class="appointment__label" for="usertel">Телефон:*</label>
-              <input class="appointment__login-tel-user" id="usertel" type="tel" name="login-telephone" placeholder="8(960)900-60-90" aria-required="true">
+            <li class="appointment__list contacts-list"><label class="appointment__label" for="usertel">Телефон:*</label>
+              <input class="appointment__login--tel-user" id="usertel" type="tel" name="login-telephone" placeholder="8(960)900-60-90" aria-required="true">
             </li>
           </ul>
         </fieldset>
         <div class="form-main__border"></div>
-        <fieldset class="appointment__text wrapper">
+        <fieldset class="appointment__text">
           <div class="appointment__title">Комментарий</div>
-            <textarea class="appointment__textarea" id="login-text" name="comment" cols="37" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="appointment__textarea" id="login-text" name="comment" cols="31" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
           <label class="appointment__label" for="login-text"></label>
         </fieldset>
-        <fieldset class="appointment__chekbox wrapper">
+        <fieldset class="appointment__checkbox">
           <div class="appointment__title">Дополнительно</div>
-          <label for="component-sweetener" class="appointment__check check option">
-            <input class="check-input" type="checkbox" name="selecting-sweetener" value="sweetener" id="component-sweetener" checked>
+          <label for="component-sweetener" class="appointment__check check-option">
+            <input class="input-checkbox" type="checkbox" name="selecting-sweetener" value="sweetener" id="component-sweetener" checked>
             <span class="check-box"></span>Сахарозаменитель
           </label>
-          <label for="component-water" class="appointment__check check option"><input class="check-input" type="checkbox" name="selecting-water" value="water" id="component-water">
+          <label for="component-water" class="appointment__check check-option"><input class="input-checkbox" type="checkbox" name="selecting-water" value="water" id="component-water">
             <span class="check-box"></span>Питьевая вода
           </label>
-          <label for="component-milk" class="appointment__check check option">
-            <input class="check-input" type="checkbox" name="selecting-milk" value="milk" id="component-milk">
+          <label for="component-milk" class="appointment__check check-option">
+            <input class="input-checkbox" type="checkbox" name="selecting-milk" value="milk" id="component-milk">
             <span class="check-box"></span>Молоко
           </label>
-          <label for="component-vitamine" class="appointment__check check option"><input class="check-input" type="checkbox" name="selecting-vitamine" value="vitamine" id="component-vitamine">
+          <label for="component-vitamine" class="appointment__check check-option"><input class="input-checkbox" type="checkbox" name="selecting-vitamine" value="vitamine" id="component-vitamine">
             <span class="check-box"></span>Витамины
           </label>
         </fieldset>
-        <fieldset class="appointment__button wrapper">
+        <fieldset class="appointment__button">
           <label for="form-submit">
-            <input class="appointment__form-submit" type="submit" name="show-result" value="Подобрать программу" id="form-submit">
+            <input class="appointment__form-submit" type="submit" name="show-result" value="Отправить заявку" id="form-submit">
           </label>
         </fieldset>
       </form>
