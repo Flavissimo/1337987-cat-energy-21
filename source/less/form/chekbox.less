@@ -1,0 +1,56 @@
+.appointment__chekbox {
+  display: flex;
+  flex-direction: column;
+  margin: 34px 0;
+}
+
+.check {
+  padding-left: 40px;
+  padding-bottom: 22px;
+}
+
+.option {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--dark-grey-text);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.check-input {
+  appearance: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+
+  &:focus + .check-box {
+    background-image: url("../img/check.svg");
+  }
+
+  &:checked:focus + .check-box {
+    background-image: url("../img/tick.svg");
+  }
+
+  &:hover + .checkbox {
+    background-image: url("../img/check.svg");
+  }
+
+  &:checked + .check-box {
+    background-image: url("../img/tick.svg");
+  }
+
+  &:disabled + .check-box {
+    opacity: 30%;
+  }
+}
+
+.check-box {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/check.svg");
+  margin-left: -40px;
+  margin-top: -7px;
+}
