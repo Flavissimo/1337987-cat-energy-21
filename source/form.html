@@ -31,8 +31,8 @@
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__item--active" href="#">Подбор программы</a>
+          <li class="site-list__item  site-list__item--active">
+            <a class="site-list__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -78,17 +78,17 @@
           <div class="appointment__title">Контактные данные <br>(владельца кота)</div>
           <ul class="appointment__item wrapper">
             <li class="appointment__list contacts-list"><label class="appointment__label" for="e-mail">E-mail:*</label>
-              <input class="appointment__login--mail-user" id="e-mail" type="email" name="login-email" placeholder="kuklachev@gmail.com" aria-required="true">
+              <input class="appointment__login appointment__login--mail-user" id="e-mail" type="email" name="login-email" placeholder="kuklachev@gmail.com" aria-required="true">
             </li>
             <li class="appointment__list contacts-list"><label class="appointment__label" for="usertel">Телефон:*</label>
-              <input class="appointment__login--tel-user" id="usertel" type="tel" name="login-telephone" placeholder="8(960)900-60-90" aria-required="true">
+              <input class="appointment__login appointment__login--tel-user" id="usertel" type="tel" name="login-telephone" placeholder="8(960)900-60-90" aria-required="true">
             </li>
           </ul>
         </fieldset>
         <div class="form-main__border"></div>
         <fieldset class="appointment__text">
           <div class="appointment__title">Комментарий</div>
-            <textarea class="appointment__textarea" id="login-text" name="comment" cols="31" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="appointment__textarea" id="login-text" name="comment" cols="31" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
           <label class="appointment__label" for="login-text"></label>
         </fieldset>
         <fieldset class="appointment__checkbox">
