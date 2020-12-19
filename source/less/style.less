@@ -8,6 +8,13 @@
 @import "index/about-benefits.less";
 @import "index/primer.less";
 @import "index/page-footer.less";
+@import "form/form-main.less";
+@import "form/appointment.less";
+@import "form/input.less";
+@import "form/radio.less";
+@import "form/contacts.less";
+@import "form/check.less";
+@import "form/notice.less";
 
 @font-face {
   font-family: "Oswald";
@@ -39,6 +46,8 @@
   --black-logo: #111111;
   --border-bottom-cat: #d9d9d9;
   --background-primer: #eaeaea;
+  --border-input: #e7e7e7;
+  --border-error: #ff8282;
 }
 
 html {
@@ -54,6 +63,12 @@ body {
   margin: 0 auto;
   padding: 0;
   position: relative;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 a {

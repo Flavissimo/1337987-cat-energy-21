@@ -1,0 +1,164 @@
+.appointment__item {
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+.appointment__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--dark-grey);
+}
+
+.appointment__label {
+  padding-right: 14px;
+}
+
+.appointment__input {
+  border: 1px solid var(--border-input);
+  height: 45px;
+  padding-left: 14px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+
+  &:hover {
+    border: 1px solid var(--special-grey);
+  }
+
+  &:focus {
+    border: 2px solid var(--dark-grey);
+  }
+
+  &:invalid {
+    border: 2px solid var(--border-error);
+  }
+}
+
+.appointment__filter {
+  padding: 22px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.appointment__radio {
+  padding-left: 40px;
+  padding-bottom: 19px;
+}
+
+.appointment__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: var(--basic-blsck);
+  text-align: left;
+  margin-bottom: 34px;
+  margin-top: 26px;
+
+  &::after {
+    content: url("../img/title-line-small.svg");
+    padding-left: 10px;
+  }
+}
+
+.appointment__login {
+  &--mail-user {
+    height: 45px;
+    width: 219px;
+    border: 1px solid var(--special-grey);
+    color: var(--dark-grey);
+    padding-left: 10px;
+  }
+
+  &--mail-user:focus {
+    border: 1px solid var(--special-grey);
+  }
+
+  &--mail-user:hover {
+    border: 1px solid var(--special-grey);
+  }
+
+  &--mail-user:disabled {
+    border: 1px solid var(--dark-grey-text);
+  }
+
+  &--mail-user:invalid {
+    border: 1px solid var(--border-error);
+  }
+
+  &--tel-user {
+    height: 45px;
+    width: 204px;
+    border: 1px solid var(--special-grey);
+    color: var(--dark-grey);
+    padding-left: 10px;
+  }
+
+  &--tel-user:focus {
+    border: 1px solid var(--special-grey);
+  }
+
+  &--tel-user:hover {
+    border: 1px solid var(--special-grey);
+  }
+
+  &--tel-user:disabled {
+    border: 1px solid var(--dark-grey-text);
+  }
+
+  &--tel-user:invalid {
+    border: 1px solid var(--border-error);
+  }
+}
+
+.appointment__textarea {
+  outline: none;
+  resize: none;
+  overflow: auto;
+  border: 1px solid var(--border-input);
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: var(--dark-grey);
+  padding-top: 13px;
+  padding-left: 15px;
+}
+
+.appointment__checkbox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 34px;
+}
+
+.appointment__check {
+  padding-left: 40px;
+  padding-bottom: 22px;
+}
+
+.appointment__form-submit {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--border-bottom);
+  width: 100%;
+  padding: 14px 0;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--hover-green);
+  }
+
+  &:active {
+    color: var(--basic-white);
+    /*Как оставить зеленый цвет при opacity?*/
+    opacity: 60%;
+  }
+}

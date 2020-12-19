@@ -1,0 +1,66 @@
+.input-username {
+  width: 228px;
+}
+
+.input-weight {
+  width: 175px;
+}
+
+.input-age {
+  width: 140px;
+}
+
+.input-radio {
+  appearance: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+
+  &:focus + .radio-box {
+    background-image: url("../img/radio.svg");
+  }
+
+  &:checked:focus + .radio-box {
+    background-image: url("../img/radio-button.svg");
+  }
+
+  &:hover + .radio-box {
+    background-image: url("../img/radio.svg");
+    opacity: 60%;
+  }
+
+  &:checked + .radio-box {
+    background-image: url("../img/radio-button.svg");
+  }
+
+  &:disabled + .radio-box {
+    opacity: 30%;
+  }
+}
+
+.input-checkbox {
+  appearance: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+
+  &:focus + .check-box {
+    background-image: url("../img/check.svg");
+  }
+
+  &:checked:focus + .check-box {
+    background-image: url("../img/tick.svg");
+  }
+
+  &:hover + .checkbox {
+    background-image: url("../img/check.svg");
+  }
+
+  &:checked + .check-box {
+    background-image: url("../img/tick.svg");
+  }
+
+  &:disabled + .check-box {
+    opacity: 30%;
+  }
+}
