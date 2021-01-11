@@ -1,0 +1,51 @@
+.page-main {
+  text-align: left;
+}
+
+.page-main__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
+  font-weight: 400;
+  padding-left: 20px;
+}
+
+.page-main__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.page-main__image {
+  margin: 0 28px;
+}
+/*Подумать. Расстояние между маленькой и большой картинкой и описанием  разное.
+ Может быть nth-child(2n)?*/
+
+.page-main__button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+  padding: 10px 0;
+  margin-bottom: 25px;
+
+  &:hover {
+    background-color: var(--hover-green);
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.page-main__more-production {
+  text-align: center;
+  padding: 25px 0;
+}
